@@ -10,5 +10,7 @@ get("/square_root/new", {:controller => "calculations", :action => "square_root_
 get("/square_root/results", {:controller => "calculations", :action => "square_root"})
 get("/payment/new/", {:controller => "calculations", :action => "payment_form"})
 get("/payment/results/", {:controller => "calculations", :action => "payment"})
+get("/random/new/", {:controller => "calculations", :action => "random_form"})
+get("/random/results/", {:controller => "calculations", :action => "random"})
 
 end

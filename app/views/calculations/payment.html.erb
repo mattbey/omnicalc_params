@@ -1,7 +1,7 @@
 <h1>Payment Results </h1>
 
 <h5>APR</h5>
-  <%= number_to_percentage(@apr) %>
+  <%= number_to_percentage(@apr, precision:4) %>
 <h5>Number of years</h5>
   <%= @years %>
   <h5>Principal</h5>
