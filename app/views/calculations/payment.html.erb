@@ -1,15 +1,15 @@
 <h1>Payment Results </h1>
 
 <h5>APR</h5>
-  <%= @user_num %>
+  <%= number_to_percentage(@apr) %>
 <h5>Number of years</h5>
-  <%= @user_num**2 %>
+  <%= @years %>
   <h5>Principal</h5>
-    <%= @user_num %>
+    <%= number_to_currency(@principal) %>
   <h5>Payment</h5>
-    <%= @user_num**2 %>
+    <%= number_to_currency(@monthly_payment) %>
 <div>
-  <a href="http://localhost:3000/payment/new">
+  <a href="http://localhost:3000/payment/new/">
         Calculate another payment
   </a>
 </div>
